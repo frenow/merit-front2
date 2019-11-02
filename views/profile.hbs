@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
+  <body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Merit-Coin</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Profile</a></li>
+      <li><a href="/saldo">Saldo</a></li>
+      <li><a href="/deposito">Depósito</a></li>
+      <li><a href="/retirada">Retirada</a></li>
+      <li><a href="/resgate">Resgate</a></li>
+      <li><a href="/about">Sobre</a></li>      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>    
+  </div>
+</nav>
+
+<h1>Ola, {{profile.displayName}}</h1>
+<h2>ID: {{profile.id}}</h2>
+<img src="" alt="">
+<style>
+		body,
+		html {
+			background: #dbdbdb !important;
+		}
+</style>
+</body>
+</html>
