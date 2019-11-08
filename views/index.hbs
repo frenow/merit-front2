@@ -4,9 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
   <style>
     
@@ -44,7 +44,26 @@
     <h1>Portal Merit-Coin</h1>
     <a href="/login" class="btn btn-info btn-lg">
           <span class="glyphicon glyphicon-log-in"></span> Login </a>
-		  
+
+
+	<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.3/firebase-messaging.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.3/firebase-database.js"></script>
+	<script>
+	  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyATU8O3NgExE_h6jrWjYpK2s47-YV-m1rQ",
+    authDomain: "merit-95628.firebaseapp.com",
+    databaseURL: "https://merit-95628.firebaseio.com",
+    projectId: "merit-95628",
+    storageBucket: "merit-95628.appspot.com",
+    messagingSenderId: "609922366963",
+    appId: "1:609922366963:web:23db734e12690b8970e686"
+  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	</script>
+
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -58,5 +77,20 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>
+
+    <script>
+      const messaging = firebase.messaging();
+      messaging.requestPermission().then(function() {
+        console.log('Notification permission granted.');
+        return messaging.getToken();
+      })
+      .then(function(token) {
+        console.log('TOKEN: ' + token);
+	   })
+      .catch(function(err) {
+        console.log('Unable to get permission to notify.', err);
+      })
+    </script>	
+
   </body>
 </html>
