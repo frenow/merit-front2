@@ -42,9 +42,6 @@
   </head>
   <body>
     <h1>Portal Merit-Coin</h1>
-    <a href="/login" class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-log-in"></span> Login </a>
-
 
 	<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.3/firebase-messaging.js"></script>
@@ -86,11 +83,11 @@ if ('serviceWorker' in navigator) {
       })
       .then(function(token) {
         console.log('TOKEN: ' + token);
+        document.write('<form action="/login" method="post"><input type="hidden" name="token" value="'+token+'"><input type="submit" value="Login" <span class="glyphicon glyphicon-log-in"></span></form>');
 	   })
       .catch(function(err) {
         console.log('Unable to get permission to notify.', err);
-      })
+      });
     </script>	
-
   </body>
 </html>

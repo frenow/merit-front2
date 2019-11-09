@@ -5,6 +5,7 @@ const passport = require('passport');
 router.get('/', passport.authenticate('github'));
 
 router.get('/callback', passport.authenticate('github', {failureRedirect: '/login'} ), (req, res) => {
+    
     res.redirect('/profile');
 })
 

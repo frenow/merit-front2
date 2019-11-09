@@ -11,6 +11,10 @@ const logoutRouter = require('./routes/logout');
 const authRouter = require('./routes/auth');
 const profileRouter = require('./routes/profile');
 const saldoRouter = require('./routes/saldo');
+const depositoRouter = require('./routes/deposito');
+const retiradaRouter = require('./routes/retirada');
+const resgateRouter = require('./routes/resgate');
+const sobreRouter = require('./routes/sobre');
 
 var app = express();
 require('./configs/github.strategy');
@@ -36,6 +40,10 @@ app.use('/logout', logoutRouter);
 app.use('/auth', authRouter);
 app.use('/profile', profileRouter);
 app.use('/saldo', saldoRouter);
+app.use('/deposito', depositoRouter);
+app.use('/retirada', retiradaRouter);
+app.use('/resgate', resgateRouter);
+app.use('/sobre', sobreRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
