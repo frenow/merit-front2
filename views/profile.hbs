@@ -30,6 +30,61 @@
 
 <h1>Ola, {{profile.displayName}}</h1>
 <h2>ID: {{profile.id}}</h2>
+
+	<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.3/firebase-messaging.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.3/firebase-database.js"></script>
+	<script>
+	  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyATU8O3NgExE_h6jrWjYpK2s47-YV-m1rQ",
+    authDomain: "merit-95628.firebaseapp.com",
+    databaseURL: "https://merit-95628.firebaseio.com",
+    projectId: "merit-95628",
+    storageBucket: "merit-95628.appspot.com",
+    messagingSenderId: "609922366963",
+    appId: "1:609922366963:web:23db734e12690b8970e686"
+  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful');
+    }, function(err) {
+      // Registration failed
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+
+    <script>
+      const messaging = firebase.messaging();
+      messaging.requestPermission().then(function() {
+        console.log('Notification permission granted.');
+        return messaging.getToken();
+      })
+      .then(function(token) {
+        console.log('TOKEN: ' + token);
+
+          var database = firebase.database();
+
+  	      firebase.database().ref('usuario/'+{{profile.id}}).set({
+		      token: token
+    		});
+        
+	   })
+      .catch(function(err) {
+        console.log('Unable to get permission to notify.', err);
+      });      
+
+    </script>	
+
 <img src="" alt="">
 <style>
 		body,
