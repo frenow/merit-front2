@@ -45,7 +45,7 @@ router.get('/', require('connect-ensure-login').ensureLoggedIn(),
                     },
                     data: {
                         "notification": {
-                          "title":"Voce acabe de receber 10und Merit",
+                          "title":"Voce acaba de receber 10und Merit",
                           "text":"O usuario 123 enviou 10und Merit para voce.",
                           "sound":"default"
                         },
