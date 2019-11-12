@@ -46,7 +46,9 @@
     appId: "1:609922366963:web:23db734e12690b8970e686"
   };
 	  // Initialize Firebase
-	  firebase.initializeApp(firebaseConfig);
+      if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+      }
 	</script>
 
 <script>
@@ -70,10 +72,9 @@ if ('serviceWorker' in navigator) {
         return messaging.getToken();
       })
       .then(function(token) {
-        console.log('TOKEN: ' + token);
+          console.log('TOKEN: ' + token);
 
           var database = firebase.database();
-
   	      firebase.database().ref('usuario/'+{{profile.id}}).set({
 		      token: token
     		});

@@ -15,7 +15,9 @@ router.get('/', require('connect-ensure-login').ensureLoggedIn(),
         messagingSenderId: "609922366963",
         appId: "1:609922366963:web:23db734e12690b8970e686"
       };
-      firebase.initializeApp(config);
+      if (!firebase.apps.length) {
+        firebase.initializeApp(config);
+      }
       //firebase.database().ref('/TestMessages').set({TestMessage: 'GET Request'});
       var userReference = firebase.database().ref("/usuario/"+req.user.id);
       var token;
