@@ -2,8 +2,8 @@ const passport = require('passport');
 const GitHubStrategy = require('passport-github').Strategy;
 
 passport.use(new GitHubStrategy({
-    clientID: 'Iv1.51fb7de2f224f187',
-    clientSecret: 'afc8c17d493cf774d04970b4656a5e7a93d9d040',
+    clientID: 'f1b06162bc22843dddac',
+    clientSecret: 'f16343db7b155c255a8283b307fe39f25283813e',
     //callbackURL: "http://localhost:3000/auth/github/callback"
     callbackURL: "https://merit-front.herokuapp.com/auth/github/callback"
   },
