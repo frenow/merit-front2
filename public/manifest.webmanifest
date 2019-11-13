@@ -1,17 +1,21 @@
 {
 	"dir" : "ltr",
-	"lang" : "pt-br",
-	"name" : "Merit",
+	"lang" : "en",
+	"name" : "Merit-Coin Login Page",
 	"scope" : "/",
 	"display" : "browser",
 	"start_url" : "https://merit-front.herokuapp.com/",
-	"short_name" : "Merit",
+	"short_name" : "Merit-Coin Logi",
 	"theme_color" : "transparent",
 	"description" : "",
 	"orientation" : "any",
 	"background_color" : "transparent",
 	"related_applications" : "",
 	"prefer_related_applications" : "false",
-	"icons" : [],
+	"icons" : [
+		{
+			"src": "https://merit-front.herokuapp.com/images/icons/favicon.ico",
+			"sizes": "64x64 48x48 32x32 16x16"
+		}],
 	"generated" : "true"
 }
