@@ -2,7 +2,7 @@
 	"dir" : "ltr",
 	"lang" : "Portuguese",
 	"name" : "Merit-Coin",
-	"scope" : "/",
+	"scope" : "https://merit-front.herokuapp.com/",
 	"display" : "fullscreen",
 	"start_url" : "https://merit-front.herokuapp.com/login",
 	"short_name" : "Merit",
@@ -93,5 +93,6 @@
 			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "76x76"
 		}],
-	"screenshots" : []
+	"screenshots" : [],
+	"generated" : "undefined"
 }

@@ -4,7 +4,7 @@
 	"name" : "Merit-Coin",
 	"scope" : "https://merit-front.herokuapp.com/",
 	"display" : "fullscreen",
-	"start_url" : "/login",
+	"start_url" : "https://merit-front.herokuapp.com/login",
 	"short_name" : "Merit",
 	"theme_color" : "transparent",
 	"description" : "",
@@ -93,5 +93,6 @@
 			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "76x76"
 		}],
-	"screenshots" : []
+	"screenshots" : [],
+	"generated" : "undefined"
 }
