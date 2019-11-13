@@ -2,9 +2,7 @@
 
 const CACHE = "pwabuilder-page";
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
-const offlineFallbackPage = [
-  '/',
-  'offline-page.html'
+const offlineFallbackPage = "offline-page.html";
 ];
 
 // Install stage sets up the offline page in the cache and opens a new cache
