@@ -1,10 +1,7 @@
 var cacheName = 'merit-page';
 var filesToCache = [
   '/',
-  '/offline-page.html',
-  '/index.html',
-  '/login.hbs',
-  '/profile.hbs'
+  '/offline-page.html'
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
