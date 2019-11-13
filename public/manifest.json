@@ -3,8 +3,8 @@
 	"lang" : "Portuguese",
 	"name" : "Merit-Coin",
 	"scope" : "https://merit-front.herokuapp.com/",
-	"display" : "browser",
-	"start_url" : "https://merit-front.herokuapp.com/login",
+	"display" : "fullscreen",
+	"start_url" : "/login",
 	"short_name" : "Merit",
 	"theme_color" : "transparent",
 	"description" : "",
@@ -18,79 +18,79 @@
 			"sizes": "64x64 48x48 32x32 16x16"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "44x44"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "48x48"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "1240x600"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "300x300"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "150x150"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "88x88"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "24x24"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "50x50"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "620x300"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "144x144"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "96x96"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "72x72"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "36x36"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "1024x1024"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "180x180"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "152x152"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "120x120"
 		},
 		{
-			"src": "[Embedded]",
+			"src": "https://merit-front.herokuapp.com/Bitcoin.png",
 			"sizes": "76x76"
 		}],
 	"screenshots" : []
