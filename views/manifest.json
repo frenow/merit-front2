@@ -3,7 +3,7 @@
 	"lang" : "Portuguese",
 	"name" : "Merit-Coin",
 	"scope" : "https://merit-front.herokuapp.com/",
-	"display" : "browser",
+	"display" : "fullscreen",
 	"start_url" : "https://merit-front.herokuapp.com/login",
 	"short_name" : "Merit",
 	"theme_color" : "transparent",
