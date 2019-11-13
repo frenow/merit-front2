@@ -1,4 +1,4 @@
-var cacheName = 'merit-page';
+var cacheName = 'merit-page1';
 var filesToCache = [
   '/',
   '/offline-page.html'
