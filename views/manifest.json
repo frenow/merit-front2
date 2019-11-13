@@ -5,7 +5,7 @@
 	"scope" : "https://merit-front.herokuapp.com/",
 	"display" : "browser",
 	"start_url" : "https://merit-front.herokuapp.com/login",
-	"short_name" : "Merit-Coin Logi",
+	"short_name" : "Merit",
 	"theme_color" : "transparent",
 	"description" : "",
 	"orientation" : "any",
