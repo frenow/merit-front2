@@ -1,5 +1,6 @@
 # merit-front
 
+-Desenvolvido em nodejs + express
 
 -Deploy e publicação HEROKU: https://merit-front.herokuapp.com/
 
