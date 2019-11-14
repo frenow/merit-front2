@@ -4,7 +4,7 @@
 	"name" : "Merit-Coin",
 	"scope" : "https://merit-front.herokuapp.com/",
 	"display" : "fullscreen",
-	"start_url" : "/index.html",
+	"start_url" : "/login",
 	"short_name" : "Merit",
 	"theme_color" : "transparent",
 	"description" : "",
