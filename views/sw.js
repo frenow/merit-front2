@@ -2,6 +2,7 @@ var cacheName = 'merit-page';
 var filesToCache = [
   '/',
   '/manifest.json',
+  '/index.html',
   '/offline-page.html'
 ];
 self.addEventListener('install', function(e) {

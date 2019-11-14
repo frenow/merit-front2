@@ -1,6 +1,7 @@
 var cacheName = 'merit-page';
 var filesToCache = [
   '/',
+  '/index.html',
   '/manifest.json',
   '/offline-page.html'
 ];
