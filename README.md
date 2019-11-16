@@ -2,7 +2,7 @@
 
 -Desenvolvido em nodejs + express
 
--Deploy e publicação HEROKU: https://merit-front.herokuapp.com/
+-Deploy e publicação HEROKU: https://merit-front.herokuapp.com/  e video demonstracao: https://www.youtube.com/watch?v=w9f_JXPogSM&t=123s
 
 -Estilo css com framework bootstrap
 
