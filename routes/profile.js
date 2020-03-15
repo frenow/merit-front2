@@ -22,6 +22,10 @@ router.get('/', require('connect-ensure-login').ensureLoggedIn(),
       var userReference = firebase.database().ref("/usuario/"+req.user.id);
       var token;
       
+      //firebase.database().ref("/usuario/"+req.user.id).set({
+      //  balance: 500
+      //});
+      
       userReference.on("value", 
                   function(snapshot) {
                         console.log("snapshot : "+ snapshot.val().token);
@@ -33,7 +37,8 @@ router.get('/', require('connect-ensure-login').ensureLoggedIn(),
                         console.log("The read failed: " + errorObject.code);
                         //res.send("The read failed: " + errorObject.code);
                  }); 
-    
+
+        
         setTimeout(function() {    
             axios(
                 {

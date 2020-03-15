@@ -15,6 +15,9 @@ const depositoRouter = require('./routes/deposito');
 const retiradaRouter = require('./routes/retirada');
 const resgateRouter = require('./routes/resgate');
 const sobreRouter = require('./routes/sobre');
+const deposit = require('./routes/api/deposit');
+const balance = require('./routes/api/balance');
+const withdraw = require('./routes/api/withdraw');
 
 var app = express();
 require('./configs/github.strategy');
@@ -44,6 +47,9 @@ app.use('/deposito', depositoRouter);
 app.use('/retirada', retiradaRouter);
 app.use('/resgate', resgateRouter);
 app.use('/sobre', sobreRouter);
+app.use('/api', deposit);
+app.use('/api', balance);
+app.use('/api', withdraw);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
